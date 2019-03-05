@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<!--This file was created with the Microsoft Visual Programming Language.-->
+<Manifest xmlns:brick="http://schemas.microsoft.com/robotics/2007/07/lego/nxt/brick.html" xmlns:drive="http://schemas.microsoft.com/robotics/2007/07/lego/nxt/drive.html" xmlns:battery="http://schemas.microsoft.com/robotics/2007/07/lego/nxt/battery.html" xmlns:dssp="http://schemas.microsoft.com/xw/2004/10/dssp.html" xmlns:motor="http://schemas.microsoft.com/robotics/2007/07/lego/nxt/motor.html" xmlns:this="urn:uuid:355716b5-cedb-4bda-8245-959800a57476" xmlns:mylegocarservice="http://schemas.tempuri.org/2010/09/mylegocarservice.html" xmlns="http://schemas.microsoft.com/xw/2004/10/manifest.html">
+  <CreateServiceList>
+    <ServiceRecordType>
+      <dssp:Contract>http://schemas.tempuri.org/2010/09/mylegocarservice.html</dssp:Contract>
+      <dssp:PartnerList>
+        <dssp:Partner>
+          <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/battery.html</dssp:Contract>
+          <dssp:PartnerList />
+          <dssp:Name>mylegocarservice:NxtBattery</dssp:Name>
+          <dssp:ServiceName>this:LegoNXTBatteryv2</dssp:ServiceName>
+        </dssp:Partner>
+        <dssp:Partner>
+          <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/drive.html</dssp:Contract>
+          <dssp:PartnerList />
+          <dssp:Name>mylegocarservice:NxtDrive</dssp:Name>
+          <dssp:ServiceName>this:LegoNXTDrivev2</dssp:ServiceName>
+        </dssp:Partner>
+        <dssp:Partner>
+          <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/motor.html</dssp:Contract>
+          <dssp:PartnerList />
+          <dssp:Name>mylegocarservice:NxtMotor</dssp:Name>
+          <dssp:ServiceName>this:LegoNXTMotorv2</dssp:ServiceName>
+        </dssp:Partner>
+      </dssp:PartnerList>
+      <Name>this:mylegocarservice</Name>
+    </ServiceRecordType>
+    <ServiceRecordType>
+      <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/battery.html</dssp:Contract>
+      <dssp:PartnerList>
+        <dssp:Partner>
+          <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/battery.html</dssp:Contract>
+          <dssp:Service>legonxtbatteryv2.config.xml</dssp:Service>
+          <dssp:PartnerList />
+          <dssp:Name>dssp:StateService</dssp:Name>
+        </dssp:Partner>
+        <dssp:Partner>
+          <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/brick.html</dssp:Contract>
+          <dssp:PartnerList />
+          <dssp:Name>battery:brick</dssp:Name>
+          <dssp:ServiceName>this:LegoNXTBrickv2</dssp:ServiceName>
+        </dssp:Partner>
+      </dssp:PartnerList>
+      <Name>this:LegoNXTBatteryv2</Name>
+    </ServiceRecordType>
+    <ServiceRecordType>
+      <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/drive.html</dssp:Contract>
+      <dssp:PartnerList>
+        <dssp:Partner>
+          <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/drive.html</dssp:Contract>
+          <dssp:Service>legonxtdrivev2.config.xml</dssp:Service>
+          <dssp:PartnerList />
+          <dssp:Name>dssp:StateService</dssp:Name>
+        </dssp:Partner>
+        <dssp:Partner>
+          <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/brick.html</dssp:Contract>
+          <dssp:PartnerList />
+          <dssp:Name>drive:brick</dssp:Name>
+          <dssp:ServiceName>this:LegoNXTBrickv2</dssp:ServiceName>
+        </dssp:Partner>
+      </dssp:PartnerList>
+      <Name>this:LegoNXTDrivev2</Name>
+    </ServiceRecordType>
+    <ServiceRecordType>
+      <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/motor.html</dssp:Contract>
+      <dssp:PartnerList>
+        <dssp:Partner>
+          <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/motor.html</dssp:Contract>
+          <dssp:Service>legonxtmotorv2.config.xml</dssp:Service>
+          <dssp:PartnerList />
+          <dssp:Name>dssp:StateService</dssp:Name>
+        </dssp:Partner>
+        <dssp:Partner>
+          <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/brick.html</dssp:Contract>
+          <dssp:PartnerList />
+          <dssp:Name>motor:brick</dssp:Name>
+          <dssp:ServiceName>this:LegoNXTBrickv2</dssp:ServiceName>
+        </dssp:Partner>
+      </dssp:PartnerList>
+      <Name>this:LegoNXTMotorv2</Name>
+    </ServiceRecordType>
+    <ServiceRecordType>
+      <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/brick.html</dssp:Contract>
+      <dssp:PartnerList>
+        <dssp:Partner>
+          <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/brick.html</dssp:Contract>
+          <dssp:Service>legonxtbrickv2.config.xml</dssp:Service>
+          <dssp:PartnerList />
+          <dssp:Name>dssp:StateService</dssp:Name>
+        </dssp:Partner>
+      </dssp:PartnerList>
+      <Name>this:LegoNXTBrickv2</Name>
+    </ServiceRecordType>
+  </CreateServiceList>
+</Manifest>
