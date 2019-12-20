@@ -1,4 +1,4 @@
-When I wanted to create my first robotics service, I had many difficulties and found very few resources over the internet for LEGO NXT 2.0 using Microsoft Robotics, so just thought of blogging about this.
+When I wanted to create my first robotics service, I had many difficulties and found very few resources over the internet for LEGO NXT 2.0 using Microsoft Robotics, so just thought of writing about it.
 
 Requirements
 ------------
@@ -41,5 +41,3 @@ How to create manifest using DSS Manifest Editor?
 8. To start the service execute **dsshost /port:50000 /manifest:"C:\Users\username\Microsoft Robotics Dev Studio 2008 R3\MyDemoService\MyDemoService.manifest.xml”** in DSS Command Prompt.
 9. You can also start the service from the DSS Control Panel. In order to view the control panel, start DSS Node and then go to http://localhost:50000 (default port is 50000, if you’ve changed it use it accordingly).
 10. Switch ON your LEGO NXT 2.0 and then start the service. If everything is configured properly, you should be able to hear connecting sound from the NXT Brick.
-
-This is it for now, in the next blog post, I’ll be explaining about adding handlers to the sensors and using the motors.
